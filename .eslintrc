@@ -5,10 +5,11 @@
   ],
   "parser": "babel-eslint",
   "rules": {
-    "prettier/prettier": ["error", {
+    "prettier/prettier": ["warn", {
       "printWidth": 100,
       "singleQuote": true,
-      "trailingComma": "es5"
+      "trailingComma": "all",
+      "no-console": "allow"
     }],
     "import/prefer-default-export": 0
   },
