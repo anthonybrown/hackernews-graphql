@@ -9,7 +9,6 @@
       "printWidth": 100,
       "singleQuote": true,
       "trailingComma": "all",
-      "no-console": "allow"
     }],
     "import/prefer-default-export": 0
   },
