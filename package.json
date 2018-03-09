@@ -1,10 +1,10 @@
 {
   "name": "graphql-news",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "index.js",
   "repository": "https://github.com/anthonybrown/hackernews-graphql",
   "private": true,
-  "author": "Tony Brown <tony@tonybrown.me>",
+  "author": "",
   "license": "MIT",
   "scripts": {
     "start": "babel-node ./server.js"
