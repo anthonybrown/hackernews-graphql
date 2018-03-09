@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": "https://github.com/anthonybrown/hackernews-graphql",
   "private": true,
-  "author": "Tony Brown <tony@tonybrown.me>",
+  "author": "pixel67 <tony@tonybrown.me> (http://tonybrown.me/)",
   "license": "MIT",
   "scripts": {
     "start": "babel-node ./server.js"
