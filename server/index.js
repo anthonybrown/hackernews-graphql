@@ -10,6 +10,7 @@ const typeDefs = `
     id: Int! @unique
     url: String!
     description: String!
+    author: User!
   }
 
   type User {
@@ -27,8 +28,8 @@ const typeDefs = `
 `;
 
 const links = [
-  { id: 0, url: 'https://google.com', description: 'Google' },
-  { id: 1, url: 'https://github.com', description: 'Github' },
+  { id: 0, author: 0, url: 'https://google.com', description: 'Google' },
+  { id: 1, author: 1, url: 'https://github.com', description: 'Github' },
 ];
 
 const users = [
@@ -42,6 +43,9 @@ const resolvers = {
     link: (_, { id }) => find(links, { id }),
     allUsers: () => users,
     user: (_, { id }) => find(users, { id }),
+  },
+  Link: {
+    author: ({ author }) => find(users, { id: author }),
   },
 };
 
