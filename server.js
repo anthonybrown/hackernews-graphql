@@ -39,9 +39,9 @@ const users = [
 const resolvers = {
   Query: {
     allLinks: () => links,
-    link: (obj, args, context, info) => find(links, { id: args.id }), // eslint-disable-line no-unused-vars
+    link: (_, { id }) => find(links, { id }),
     allUsers: () => users,
-    user: (obj, args, context, info) => find(users, { id: args.id }), // eslint-disable-line no-unused-vars
+    user: (_, { id }) => find(users, { id }),
   },
 };
 
