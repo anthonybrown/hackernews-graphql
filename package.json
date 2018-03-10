@@ -7,16 +7,19 @@
   "author": "pixel67 <tony@tonybrown.me> (http://tonybrown.me/)",
   "license": "MIT",
   "scripts": {
+    "build": "babel server/ -d src/",
+    "prepublish": "yarn run build",
     "start": "babel-node ./server",
     "dev": "nodemon --exec babel-node ./server"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-eslint": "^8.2.1",
     "babel-jest": "^22.1.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "6.23.0",
     "babel-register": "^6.26.0",
     "dotenv": "^4.0.0",
     "eslint": "^4.15.0",
@@ -24,6 +27,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-prettier": "^2.5.0",
+    "flow-bin": "0.67.1",
     "jest": "22.4.2",
     "nodemon": "^1.14.11",
     "prettier": "^1.10.2"

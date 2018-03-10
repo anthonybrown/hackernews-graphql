@@ -5,10 +5,12 @@
   "presets": [
     [
       "env", {
+        "es6",
         "targets": {
           "node": "current"
         }
       }
-    ]
+		],
+		"flow",
   ]
 }
