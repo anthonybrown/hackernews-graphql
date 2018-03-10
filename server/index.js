@@ -7,23 +7,23 @@ const app = express();
 
 const typeDefs = `
 	type Link {
-	  id: Int! @unique
-		url: String!
-		description: String!
-	}
+    id: Int! @unique
+    url: String!
+    description: String!
+  }
 
-	type User {
+  type User {
     id: Int! @unique
     username: String!
     about: String!
-	}
+  }
 
-	type Query {
-		allLinks: [Link]
+  type Query {
+    allLinks: [Link]
     link(id: Int!): Link
     allUsers: [User]
     user(id: Int!): User
-	}
+  }
 `;
 
 const links = [
