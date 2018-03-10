@@ -6,7 +6,7 @@ import { find } from 'lodash';
 const app = express();
 
 const typeDefs = `
-	type Link {
+  type Link {
     id: Int! @unique
     url: String!
     description: String!
