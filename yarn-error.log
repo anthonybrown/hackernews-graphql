@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/9.7.1/bin/node /usr/local/Cellar/yarn/1.5.1/libexec/bin/yarn.js run flow
+  /usr/local/Cellar/node/9.7.1/bin/node /usr/local/Cellar/yarn/1.5.1/libexec/bin/yarn.js start
 
 PATH: 
   /Users/tony/.rvm/gems/ruby-2.3.3/bin:/Users/tony/.rvm/gems/ruby-2.3.3@global/bin:/Users/tony/.rvm/rubies/ruby-2.3.3/bin:/usr/local/mysql/bin:/usr/local/opt/openssl/bin:/usr/local/opt/curl/bin:/usr/local/opt/python@2/libexec/bin:/usr/local/opt/php71/bin:/Users/tony/.composer/vendor/bin:/usr/local/opt/curl/bin:/Users/tony/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:./node_modules/.bin:/usr/local/bin:/usr/local/opt/go/libexec/bin/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/X11/bin:/Users/tony/.rvm/bin
@@ -5048,9 +5048,9 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 8
+  Exit code: 1
   Command: sh
-  Arguments: -c /Users/tony/Documents/Development/GraphQL/graphql-news/node_modules/.bin/flow
+  Arguments: -c babel-node ./server
   Directory: /Users/tony/Documents/Development/GraphQL/graphql-news
   Output:
   

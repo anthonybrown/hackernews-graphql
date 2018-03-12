@@ -9,12 +9,14 @@
       "printWidth": 100,
       "singleQuote": true,
       "trailingComma": "all",
+      "no-var": false,
     }],
     "import/prefer-default-export": 0
   },
   "env": {
     "node": true,
-    "jest": true
+    "jest": true,
+    "es6": true,
   },
   "plugins": [
     "prettier"
